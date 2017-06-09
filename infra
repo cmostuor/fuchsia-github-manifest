@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="minimal"/>
+  </imports>
+  <projects>
+    <project name="infra/config"
+             path="infra/config"
+             remote="https://github.com/fuchsia-mirror/infra-config"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="infra/recipes"
+             path="infra/recipes"
+             remote="https://github.com/fuchsia-mirror/infra-recipes"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>

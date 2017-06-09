@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="magentix"/>
+  </imports>
+  <projects>
+    <project name="cobalt_client"
+             path="apps/cobalt_client"
+             remote="https://github.com/fuchsia-mirror/cobalt_client"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+
+    <!-- Third Party -->
+    <project name="third_party/protobuf"
+             path="third_party/protobuf"
+             remote="https://github.com/fuchsia-mirror/third_party-protobuf"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>

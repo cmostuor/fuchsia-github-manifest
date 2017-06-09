@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="minimal"/>
+  </imports>
+  <projects>
+    <project name="web_view"
+             path="apps/web_view"
+             remote="https://github.com/fuchsia-mirror/web_view"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/cairo"
+             path="third_party/cairo"
+             remote="https://github.com/fuchsia-mirror/third_party-cairo"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             historydepth="1"/>
+    <project name="third_party/pixman"
+             path="third_party/pixman"
+             remote="https://github.com/fuchsia-mirror/third_party-pixman"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             historydepth="1"/>
+    <project name="third_party/webkit"
+             path="third_party/webkit"
+             remote="https://github.com/fuchsia-mirror/third_party-webkit"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             historydepth="1"/>
+  </projects>
+  <hooks>
+    <hook name="download-libwebkit"
+          project="web_view"
+          action="scripts/download-libwebkit.sh"/>
+  </hooks>
+</manifest>
+

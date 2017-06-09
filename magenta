@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="buildtools"/>
+    <localimport file="minimal"/>
+  </imports>
+  <projects>
+    <project name="magenta"
+             path="magenta"
+             remote="https://github.com/fuchsia-mirror/magenta"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="magenta/benchmarks"
+             path="magenta/benchmarks"
+             remote="https://github.com/fuchsia-mirror/magenta-benchmarks"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/benchmark"
+             path="third_party/benchmark"
+             remote="https://github.com/fuchsia-mirror/third_party-benchmark"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/gflags"
+             path="third_party/gflags"
+             remote="https://github.com/fuchsia-mirror/third_party-gflags"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+  <hooks>
+    <hook name="download-toolchain"
+          project="magenta"
+          action="scripts/download-toolchain"/>
+  </hooks>
+</manifest>

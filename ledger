@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="build"/>
+    <localimport file="magenta"/>
+    <localimport file="minimal"/>
+  </imports>
+  <projects>
+    <project name="ledger"
+             path="apps/ledger"
+             remote="https://github.com/fuchsia-mirror/ledger"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+
+    <!-- Third Party -->
+    <project name="third_party/flatbuffers"
+             path="third_party/flatbuffers"
+             remote="https://github.com/fuchsia-mirror/third_party-flatbuffers"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/leveldb"
+             path="third_party/leveldb"
+             remote="https://github.com/fuchsia-mirror/third_party-leveldb"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/murmurhash"
+             path="third_party/murmurhash"
+             remote="https://github.com/fuchsia-mirror/third_party-murmurhash.c"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>
