@@ -51,14 +51,14 @@
     <!-- Audio -->
     <project name="drivers/audio"
              path="drivers/audio"
-             remote="https://github.com/fuchsia-mirror/drivers/audio"
+             remote="https://github.com/fuchsia-mirror/drivers-audio"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
     <!-- Input -->
     <project name="drivers/input"
              path="drivers/input"
-             remote="https://github.com/fuchsia-mirror/drivers/input"
+             remote="https://github.com/fuchsia-mirror/drivers-input"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
